@@ -155,7 +155,18 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
  .benefit{padding:16px 12px}
  .benefit:first-child{padding-left:12px}
  .cat-grid{grid-template-columns:1fr}
- .cat-img{height:180px}
+ ..cat-img {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.cat-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
  .about-grid,.location-grid{grid-template-columns:1fr;gap:20px}
  .contact-box{grid-column:auto}
  .office-photo,.office-photo img{height:320px;min-height:320px}
