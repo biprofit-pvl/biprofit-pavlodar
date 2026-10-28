@@ -1,372 +1,762 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Сварочные материалы и оборудование ESAB, электроды, сварочная проволока, TIG-прутки, абразивы Klingspor и инструмент Metabo в Павлодаре. Запросите цену и КП для предприятия у B.I.Profit.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://biprofit-pvl.github.io/biprofit-pavlodar/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ru_KZ">
-<meta property="og:title" content="Сварочные материалы и оборудование в Павлодаре | B.I.Profit">
-<meta property="og:description" content="ESAB, Klingspor и Metabo для предприятий Павлодара и области. Запрос цены и коммерческого предложения.">
-<meta property="og:url" content="https://biprofit-pvl.github.io/biprofit-pavlodar/">
-<title>Сварочные материалы и оборудование в Павлодаре | B.I.Profit</title>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "B.I.Profit | Павлодар",
-  "description": "Сварочные материалы и оборудование ESAB, абразивы Klingspor и инструмент Metabo для предприятий Павлодара и Павлодарской области.",
-  "url": "https://biprofit-pvl.github.io/biprofit-pavlodar/",
-  "telephone": "+7-707-153-59-58",
-  "email": "ossipov@biprofit.kz",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "ул. Ермухана Бекмаханова, 157/7, офис Б",
-    "addressLocality": "Павлодар",
-    "addressCountry": "KZ"
-  },
-  "areaServed": [
-    {"@type": "City", "name": "Павлодар"},
-    {"@type": "City", "name": "Экибастуз"},
-    {"@type": "City", "name": "Аксу"}
-  ],
-  "brand": ["ESAB", "Klingspor", "Metabo"]
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* B.I.Profit — Hybrid Premium Redesign */
-:root {
-  --bg: #0b0d0f;
-  --panel: #171a1d;
-  --panel2: #f4f5f3;
-  --text: #f8f8f5;
-  --muted: #aeb4ba;
-  --yellow: #ffd21f;
-  --line: #303438;
-}
+  <title>B.I.Profit — сварочные материалы и оборудование в Павлодаре</title>
+  <meta name="description" content="B.I.Profit — официальный дистрибьютор ESAB в Казахстане. Сварочные материалы, оборудование, абразивы Klingspor и промышленные решения для предприятий Павлодара.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
 
-body {
-  background: var(--bg);
-  letter-spacing: 0.1px;
-}
+  <link rel="canonical" href="https://biprofit-pvl.github.io/biprofit-pavlodar/">
 
-.header {
-  background: rgba(11, 13, 15, 0.94);
-}
+  <style>
+    :root {
+      --black: #111111;
+      --dark: #191919;
+      --gold: #d6a84b;
+      --cream: #f5f4f0;
+      --white: #ffffff;
+      --text: #202020;
+      --muted: #6b6b6b;
+      --border: #e6e3dc;
+    }
 
-.brand {
-  letter-spacing: 0.8px;
-}
+    * { box-sizing: border-box; }
 
-.hero {
-  padding: 94px 0 82px;
-  background:
-    radial-gradient(ellipse at 78% 35%, rgba(255, 210, 31, 0.13), transparent 32%),
-    linear-gradient(115deg, #0b0d0f 0%, #171a1d 62%, #24221a 100%);
-  border-bottom: 1px solid #383324;
-}
+    html { scroll-behavior: smooth; }
 
-.hero h1 {
-  max-width: 720px;
-  font-weight: 900;
-  line-height: 1.02;
-  letter-spacing: -2.5px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+    }
 
-.hero h1 span {
-  color: var(--yellow);
-  text-shadow: 0 0 32px rgba(255, 210, 31, 0.12);
-}
+    a { color: inherit; text-decoration: none; }
 
-.hero p {
-  line-height: 1.75;
-}
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+    }
 
-.eyebrow {
-  letter-spacing: 2.4px;
-}
+    .topbar {
+      background: #0b0b0b;
+      color: #d8d8d8;
+      font-size: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid #292929;
+    }
 
-.btn {
-  min-height: 46px;
-  border-radius: 5px;
-  box-shadow: 0 5px 18px rgba(255, 210, 31, 0.08);
-}
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
-.btn.secondary {
-  box-shadow: none;
-}
+    header {
+      background: var(--black);
+      color: white;
+      border-bottom: 1px solid #303030;
+    }
 
-.btn:hover {
-  box-shadow: 0 8px 24px rgba(255, 210, 31, 0.16);
-}
+    .header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
 
-.hero-art .halo {
-  background:
-    radial-gradient(circle, rgba(255, 210, 31, 0.15), rgba(255, 210, 31, 0.025) 55%, transparent 70%);
-  box-shadow: 0 0 80px rgba(255, 210, 31, 0.04);
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
 
-.section {
-  padding-top: 82px;
-  padding-bottom: 82px;
-}
+    .brand img {
+      display: block;
+      width: 66px;
+      height: 66px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
 
-.section.alt {
-  background: #121416;
-}
+    .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--gold);
+    }
 
-.section h2 {
-  line-height: 1.15;
-  font-weight: 850;
-}
+    .brand-caption {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: #d5d0c5;
+    }
 
-.category,
-.product {
-  border-radius: 8px;
-  transition: transform 0.22s ease, border-color 0.22s ease,
-    box-shadow 0.22s ease;
-}
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      color: #eeeeee;
+    }
 
-.category {
-  background: linear-gradient(145deg, #1b1e21, #131517);
-  padding: 25px;
-}
+    nav a:hover { color: var(--gold); }
 
-.category:hover,
-.product:hover {
-  transform: translateY(-4px);
-  border-color: #8c7720;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
-}
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 13px 20px;
+      background: var(--gold);
+      color: #151515;
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
+    }
 
-.cat-icon {
-  border: 1px solid rgba(255, 210, 31, 0.18);
-}
+    .button:hover {
+      background: #edc86e;
+      border-color: #edc86e;
+      transform: translateY(-1px);
+    }
 
-.product {
-  background: #f4f5f3;
-  color: #17191b;
-  border: 1px solid #e0e2df;
-  padding: 23px;
-}
+    .button-outline {
+      background: transparent;
+      color: white;
+      border-color: #777;
+    }
 
-.product p,
-.product .price-note {
-  color: #5c6267;
-}
+    .button-outline:hover { color: #151515; }
 
-.product .tag {
-  color: #796000;
-}
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(ellipse at 85% 30%, rgba(214,168,75,.15), transparent 35%),
+        linear-gradient(120deg, #111 0%, #1b1b1b 58%, #101010 100%);
+    }
 
-.product h3 {
-  line-height: 1.3;
-}
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      right: -140px;
+      bottom: -200px;
+      border: 1px solid rgba(214,168,75,.28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 35px rgba(214,168,75,.025),
+                  0 0 0 70px rgba(214,168,75,.025);
+      pointer-events: none;
+    }
 
-.product .btn {
-  box-shadow: none;
-}
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      padding-top: 88px;
+      padding-bottom: 92px;
+      max-width: 800px;
+    }
 
-.product .bottom {
-  padding-top: 16px;
-  border-top: 1px solid #dedfdb;
-}
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
 
-.benefit {
-  border-left: 3px solid var(--yellow);
-  border-radius: 0 6px 6px 0;
-}
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(36px, 5.5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      max-width: 780px;
+    }
 
-.cta {
-  border-radius: 8px;
-  padding: 42px;
-  background:
-    radial-gradient(ellipse at 90% 0%, rgba(255, 210, 31, 0.1), transparent 50%),
-    linear-gradient(120deg, #24251e, #17191b);
-}
+    .hero p {
+      max-width: 620px;
+      margin: 0 0 30px;
+      color: #c9c9c9;
+      font-size: 18px;
+    }
 
-.contact-card {
-  border-radius: 8px;
-}
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-.field input,
-.field select,
-.field textarea {
-  border-radius: 5px;
-}
+    .hero-note {
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid #393939;
+      color: #bdbdbd;
+      font-size: 13px;
+    }
 
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  box-shadow: 0 0 0 3px rgba(255, 210, 31, 0.1);
-}
+    .hero-note strong { color: white; }
 
-@media (max-width: 560px) {
-  .hero {
-    padding: 58px 0 48px;
-  }
+    .trust-strip {
+      background: #202020;
+      color: white;
+      border-top: 1px solid #353535;
+    }
 
-  .hero h1 {
-    letter-spacing: -1.5px;
-  }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
-  .section {
-    padding-top: 58px;
-    padding-bottom: 58px;
-  }
+    .trust-item {
+      padding: 23px 20px;
+      border-right: 1px solid #3a3a3a;
+    }
 
-  .category,
-  .product {
-    padding: 21px;
-  }
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child { border: 0; }
 
-  .cta {
-    padding: 25px;
-  }
-}
+    .trust-item strong {
+      display: block;
+      color: var(--gold);
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition: none !important;
-  }
-}
+    .trust-item span {
+      color: #c4c4c4;
+      font-size: 12px;
+    }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-  text-decoration: none;
-}
+    section { padding: 76px 0; }
 
-.brand-logo {
-  display: block;
-  width: 190px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 32px;
+    }
 
-@media (max-width: 560px) {
-  .brand-logo {
-    width: 145px;
-  }
-}
-<style>
-:root{--bg:#101112;--panel:#191b1d;--panel2:#202326;--text:#f7f7f5;--muted:#b6b8ba;--yellow:#ffd21f;--line:#34373a;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:10px 0;flex-wrap:wrap}.header{position:sticky;top:0;z-index:10;background:rgba(16,17,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.4px}.logo{width:42px;height:42px;display:grid;place-items:center;background:var(--yellow);color:#101112;font-weight:1000;font-size:15px;clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%)}.brand small{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:1.6px}.links{display:flex;gap:22px;color:#ddd;font-size:14px}.links a:hover{color:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--yellow);background:var(--yellow);color:#111;padding:12px 18px;border-radius:7px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}.btn.secondary{background:transparent;color:var(--text);border-color:#555}.btn.small{padding:9px 12px;font-size:13px}.hero{position:relative;overflow:hidden;padding:78px 0 66px;background:radial-gradient(ellipse at 83% 34%,rgba(255,210,31,.14),transparent 35%),linear-gradient(120deg,#101112 45%,#181a1c)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:44px}.eyebrow{color:var(--yellow);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.03;letter-spacing:-2px;margin:16px 0 20px;max-width:680px}.hero h1 span{color:var(--yellow)}.hero p{color:#c4c5c6;max-width:580px;font-size:18px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:13px}.trust span:before{content:"✓";color:var(--yellow);font-weight:900;margin-right:7px}.hero-art{min-height:350px;position:relative;display:flex;align-items:center;justify-content:center}.halo{width:min(380px,100%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,210,31,.4);display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(255,210,31,.12),rgba(255,210,31,.02) 55%,transparent 56%)}.halo:before,.halo:after{content:"";position:absolute;border:1px solid rgba(255,210,31,.18);border-radius:50%;inset:25px}.halo:after{inset:55px}.machine{width:190px;height:200px;position:relative;z-index:1;background:linear-gradient(145deg,#35393d,#151719);border:2px solid #55595d;border-radius:16px;box-shadow:0 30px 60px #0009;transform:rotate(-5deg);padding:17px}.machine:before{content:"ESAB";display:block;color:var(--yellow);font-weight:1000;font-size:26px;letter-spacing:2px}.machine .screen{height:48px;background:#090a0a;border:1px solid #555;margin:12px 0;border-radius:4px;position:relative}.machine .screen:after{content:"350";position:absolute;right:10px;top:8px;color:#9df6a7;font-family:monospace;font-size:22px}.machine .knobs{display:flex;gap:12px}.machine .knobs i{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#777,#222);border:2px solid #777}.spark{position:absolute;color:var(--yellow);font-size:28px}.spark.s1{top:12%;right:14%}.spark.s2{bottom:18%;left:12%;font-size:20px}.floating{position:absolute;bottom:20px;right:-4px;background:#202326;border:1px solid #484b4e;border-radius:9px;padding:13px 16px;font-size:13px;box-shadow:0 12px 30px #0006}.floating strong{display:block;color:var(--yellow);font-size:16px}.section{padding:70px 0}.section.alt{background:#151719;border-top:1px solid #242629;border-bottom:1px solid #242629}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section h2{font-size:clamp(28px,3vw,40px);letter-spacing:-1px;margin:8px 0}.section-head p{color:var(--muted);max-width:520px;margin:0}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.category{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;min-height:210px;display:flex;flex-direction:column;transition:.2s}.category:hover{border-color:#82701e;transform:translateY(-3px)}.cat-icon{width:48px;height:48px;background:#2c2a1e;color:var(--yellow);border-radius:10px;display:grid;place-items:center;font-size:24px;margin-bottom:18px}.category h3{font-size:18px;margin:0 0 8px}.category p{color:var(--muted);font-size:14px;margin:0 0 18px}.category a{margin-top:auto;color:var(--yellow);font-weight:800;font-size:13px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{border:1px solid #444;background:transparent;color:#ddd;padding:9px 14px;border-radius:99px;cursor:pointer;font-size:13px}.filter.active,.filter:hover{background:var(--yellow);border-color:var(--yellow);color:#111;font-weight:800}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;min-height:240px}.product .tag{color:var(--yellow);font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:900}.product h3{font-size:20px;margin:10px 0 8px}.product p{color:var(--muted);font-size:14px;margin:0 0 18px}.product .bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.price-note{font-size:12px;color:var(--muted)}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{padding:24px;border-left:2px solid var(--yellow);background:#1a1c1e}.benefit h3{margin:0 0 8px}.benefit p{color:var(--muted);font-size:14px;margin:0}.cta{padding:38px;border-radius:16px;background:linear-gradient(120deg,#272719,#1c1e20);border:1px solid #4a4425;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.cta h2{margin:0 0 8px}.cta p{color:var(--muted);margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;color:#d6d6d6}.field input,.field select,.field textarea{width:100%;background:#111314;color:white;border:1px solid #414447;border-radius:7px;padding:12px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--yellow)}.field textarea{min-height:100px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin-top:12px}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}.contact-card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:12px}.contact-line{padding:14px 0;border-bottom:1px solid var(--line)}.contact-line:last-child{border:0}.contact-line small{display:block;color:var(--muted);margin-bottom:4px}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.mobile-menu{display:none}
-@media(max-width:900px){.links{display:none}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:280px}.grid4{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.cta{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}}
-@media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.topbar .wrap{font-size:11px}.nav{padding:12px 0}.nav>.btn{display:none}.hero{padding:54px 0 46px}.hero h1{letter-spacing:-1.2px}.hero p{font-size:16px}.hero-art{min-height:250px}.halo{width:260px}.machine{transform:scale(.8) rotate(-5deg)}.floating{right:0;bottom:0}.section{padding:52px 0}.grid4,.products,.benefits{grid-template-columns:1fr}.category{min-height:180px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.cta{padding:24px}.section-head{margin-bottom:22px}}
-</style>
+    .section-kicker {
+      color: #9b752c;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 7px 0 0;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      letter-spacing: -.7px;
+    }
+
+    .section-heading p {
+      max-width: 440px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .catalog { background: var(--cream); }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .catalog-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 27px;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .catalog-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    }
+
+    .card-number {
+      color: #a27b2d;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .catalog-card h3 {
+      margin: 15px 0 8px;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    .catalog-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 22px;
+    }
+
+    .card-link {
+      margin-top: auto;
+      color: #8c6825;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .brands { background: white; }
+
+    .brands-intro {
+      color: var(--muted);
+      max-width: 660px;
+      margin: 12px 0 32px;
+    }
+
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .brand-card {
+      min-height: 130px;
+      padding: 22px 15px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: white;
+    }
+
+    .brand-card strong {
+      font-size: 21px;
+      letter-spacing: .5px;
+    }
+
+    .brand-card span {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 7px;
+    }
+
+    .esab { background: #ffdf00; color: #111; }
+    .klingspor { background: #f8f8f8; color: #222; }
+    .gce { color: #c5292f; }
+    .binzel { color: #222; }
+    .binzel strong { letter-spacing: -.5px; }
+
+    .about { background: #f6f5f2; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-copy p {
+      color: #5e5e5e;
+      font-size: 15px;
+    }
+
+    .about-points {
+      display: grid;
+      gap: 12px;
+    }
+
+    .about-point {
+      padding: 18px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+    }
+
+    .about-point strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .about-point span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .contact {
+      background: var(--black);
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-copy p {
+      color: #c4c4c4;
+      font-size: 15px;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 17px;
+      margin-top: 28px;
+    }
+
+    .contact-info div {
+      color: #cfcfcf;
+      font-size: 14px;
+    }
+
+    .contact-info strong {
+      display: block;
+      color: var(--gold);
+      margin-bottom: 3px;
+    }
+
+    .contact-panel {
+      padding: 28px;
+      background: #1b1b1b;
+      border: 1px solid #363636;
+      border-radius: 7px;
+    }
+
+    .contact-panel h3 { margin: 0 0 8px; font-size: 22px; }
+    .contact-panel p { color: #bdbdbd; font-size: 14px; margin-top: 0; }
+
+    .contact-panel .button { margin-top: 12px; width: 100%; }
+
+    footer {
+      background: #090909;
+      color: #a9a9a9;
+      padding: 23px 0;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media (max-width: 850px) {
+      nav { gap: 13px; font-size: 12px; }
+      .header-inner { gap: 15px; }
+      .brand-caption { letter-spacing: .5px; }
+      .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .brands-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 600px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .topbar-inner { justify-content: center; text-align: center; }
+      .header-inner { padding: 12px 0; flex-wrap: wrap; }
+      .brand img { width: 54px; height: 54px; }
+      .brand-name { font-size: 19px; }
+      .brand-caption { font-size: 8px; }
+      nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        padding: 8px 0 3px;
+      }
+      nav a { font-size: 12px; }
+      .header-inner > .button { padding: 10px 12px; font-size: 12px; }
+      .hero-inner { padding-top: 62px; padding-bottom: 64px; }
+      .hero p { font-size: 16px; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item, .trust-item:first-child {
+        padding: 15px 0;
+        border-right: 0;
+        border-bottom: 1px solid #3a3a3a;
+      }
+      .trust-item:last-child { border-bottom: 0; }
+      section { padding: 55px 0; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 14px; }
+      .catalog-grid { grid-template-columns: 1fr; }
+      .catalog-card { min-height: 180px; padding: 23px; }
+      .brands-grid { gap: 9px; }
+      .brand-card { padding: 15px 8px; min-height: 110px; }
+      .brand-card strong { font-size: 17px; }
+      .contact-panel { padding: 21px; }
+    }
+  </style>
 </head>
-<body>
-<div class="topbar"><div class="wrap"><span>Павлодар · Работаем с предприятиями и снабжением</span><span>Пн–Пт · Уточняйте наличие у менеджера</span></div></div>
-<header class="header"><div class="wrap nav">
 
-<a class="brand" href="./" aria-label="B.I.Profit — главная страница">
-  <img
-    src="./logo-biprofit.png"
-    alt="B.I.Profit — официальный дистрибьютор ESAB в Казахстане"
-    class="brand-logo"
-    width="190"
-    height="60"
-  />
-</a>
- href="#top"><span class="logo">BI</span><span>B.I.PROFIT<small>ПАВЛОДАР</small></span></a>
-<nav class="links"><a href="#catalog">Каталог</a><a href="#advantages">Преимущества</a><a href="#about">О компании</a><a href="#contacts">Контакты</a><a href="elektrody-esab-pavlodar.html">Электроды ESAB</a></nav>
-<a class="btn small" href="#request">Запросить цену ↗</a>
-</div></header>
-<main id="top">
-<section class="hero"><div class="wrap hero-grid">
-<div><div class="eyebrow">Сварка · Резка · Производство</div><h1>Всё для сварки.<br><span>Надёжно и по делу.</span></h1>
-<p>Сварочные материалы, оборудование и абразивы для производственных предприятий Павлодара и области. Подберём решение под вашу задачу и подготовим коммерческое предложение.</p>
-<div class="actions"><a class="btn" href="#catalog">Посмотреть каталог ↓</a><a class="btn secondary" href="#request">Запросить КП</a></div>
-<div class="trust"><span>Официальный дистрибьютор ESAB в Казахстане</span><span>B2B-поставки</span><span>Подбор аналогов</span></div></div>
-<div class="hero-art" aria-label="Иллюстрация сварочного оборудования"><div class="halo"><div class="machine"><div class="screen"></div><div class="knobs"><i></i><i></i><i></i></div></div><b class="spark s1">✦</b><b class="spark s2">✧</b></div><div class="floating"><strong>ESAB · Klingspor · Metabo</strong>Материалы и оборудование</div></div>
-</div></section>
-<section class="section" id="seo-region"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">Поставки по региону</div><h2>Сварочные материалы в Павлодаре для предприятий</h2></div>
-<p>B.I.Profit помогает снабженцам, производственным и монтажным организациям подобрать сварочные материалы, оборудование и абразивы под задачи предприятия.</p></div>
-<div class="benefits">
-<article class="benefit"><h3>Электроды и сварочная проволока</h3><p>Подбор марки и диаметра по спецификации, основному металлу и технологии сварки.</p></article>
-<article class="benefit"><h3>Сварочное оборудование</h3><p>Решения ESAB для ручной дуговой, MIG/MAG, TIG-сварки и плазменной резки — по запросу.</p></article>
-<article class="benefit"><h3>Абразивы и инструмент</h3><p>Круги Klingspor и инструмент Metabo для резки, зачистки и производственных работ.</p></article>
-</div></div></section>
-<section class="section" id="catalog"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">Каталог продукции</div><h2>Под задачи вашего производства</h2></div><p>Выберите категорию или запросите подбор. Цены и остатки подтверждаем индивидуально перед выставлением предложения.</p></div>
-<div class="grid4">
-<article class="category"><div class="cat-icon">⚡</div><h3>Сварочные материалы</h3><p>Электроды, MIG/MAG-проволока, TIG-присадки, порошковая проволока.</p><a href="#products" data-filter-link="welding">Смотреть позиции →</a></article>
-<article class="category"><div class="cat-icon">▣</div><h3>Сварочное оборудование</h3><p>Источники сварочного тока, полуавтоматы, TIG и плазменная резка.</p><a href="#products" data-filter-link="equipment">Смотреть позиции →</a></article>
-<article class="category"><div class="cat-icon">◉</div><h3>Абразивы Klingspor</h3><p>Отрезные и шлифовальные круги, лепестковые круги и нетканые материалы.</p><a href="#products" data-filter-link="abrasives">Смотреть позиции →</a></article>
-<article class="category"><div class="cat-icon">🔧</div><h3>Инструмент Metabo</h3><p>Профессиональный электроинструмент и решения для мастерских.</p><a href="#products" data-filter-link="tools">Смотреть позиции →</a></article>
-</div>
-<div id="products" class="filters" aria-label="Фильтр каталога"><button class="filter active" data-filter="all">Все направления</button><button class="filter" data-filter="welding">Сварочные материалы</button><button class="filter" data-filter="equipment">Оборудование</button><button class="filter" data-filter="abrasives">Абразивы</button><button class="filter" data-filter="tools">Инструмент</button></div>
-<div class="products" id="product-list">
-<article class="product" data-category="welding"><div class="tag">ESAB · Электроды</div><h3>Сварочные электроды</h3><p>Подбор марки и диаметра под основной металл, положение сварки и требования к шву.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Сварочные электроды ESAB">Запросить</button></div></article>
-<article class="product" data-category="welding"><div class="tag">ESAB · MIG/MAG</div><h3>Сварочная проволока</h3><p>Проволока для сварки углеродистых, низколегированных и нержавеющих сталей.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Сварочная проволока ESAB">Запросить</button></div></article>
-<article class="product" data-category="welding"><div class="tag">ESAB · TIG</div><h3>Присадочные прутки TIG</h3><p>Присадки для нержавеющих, углеродистых и разнородных сталей — по назначению.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Присадочные прутки TIG ESAB">Запросить</button></div></article>
-<article class="product" data-category="equipment"><div class="tag">ESAB · Оборудование</div><h3>Сварочные аппараты</h3><p>MMA, MIG/MAG и TIG-решения для ремонтных участков и производства.</p><div class="bottom"><span class="price-note">Подбор под задачу</span><button class="btn small request-product" data-product="Сварочное оборудование ESAB">Запросить</button></div></article>
-<article class="product" data-category="equipment"><div class="tag">ESAB · Резка</div><h3>Плазменная резка</h3><p>Оборудование и расходные элементы для резки металла.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Оборудование для плазменной резки">Запросить</button></div></article>
-<article class="product" data-category="abrasives"><div class="tag">Klingspor · Абразивы</div><h3>Отрезные и шлифовальные круги</h3><p>Расходники для резки, зачистки сварных швов и обработки поверхности.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Абразивы Klingspor">Запросить</button></div></article>
-<article class="product" data-category="abrasives"><div class="tag">Klingspor · Обработка</div><h3>Лепестковые круги и нетканые материалы</h3><p>Для подготовки поверхности, зачистки и финишной обработки.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Лепестковые круги и нетканые материалы Klingspor">Запросить</button></div></article>
-<article class="product" data-category="tools"><div class="tag">Metabo · Инструмент</div><h3>Профессиональный инструмент</h3><p>Инструмент для монтажных, ремонтных и производственных задач.</p><div class="bottom"><span class="price-note">Цена по запросу</span><button class="btn small request-product" data-product="Инструмент Metabo">Запросить</button></div></article>
-<article class="product" data-category="welding"><div class="tag">Комплектующие</div><h3>Сварочные аксессуары</h3><p>Маски, регуляторы, шланги, горелки и другие комплектующие — уточняйте ассортимент.</p><div class="bottom"><span class="price-note">Наличие уточняется</span><button class="btn small request-product" data-product="Сварочные аксессуары">Запросить</button></div></article>
-</div>
-</div></section>
-<section class="section alt" id="advantages"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Почему B.I.Profit</div><h2>Партнёр для производственных задач</h2></div><p>Помогаем не просто выбрать товар, а подобрать материал под технологию и требования заказчика.</p></div>
-<div class="benefits"><article class="benefit"><h3>01 · Подбор материалов</h3><p>Уточним основной металл, условия эксплуатации и требования к сварному соединению.</p></article><article class="benefit"><h3>02 · Коммерческое предложение</h3><p>Подготовим предложение по вашей спецификации и согласуем сроки поставки.</p></article><article class="benefit"><h3>03 · Работа с предприятиями</h3><p>Общаемся с отделами снабжения, сварочными участками и техническими специалистами.</p></article></div>
-</div></section>
-<section class="section" id="about"><div class="wrap"><div class="cta"><div><div class="eyebrow">B.I.Profit · Павлодар</div><h2>Есть спецификация? Отправьте её нам.</h2><p>Подготовим ответ по наличию, срокам и стоимости. Можно указать марки, диаметры, объём и требования к продукции.</p></div><a class="btn" href="#request">Отправить запрос ↗</a></div></div></section>
-<section class="section alt" id="request"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Заявка для B2B</div><h2>Запросить цену или КП</h2></div><p>Заполните форму — сайт подготовит заявку для отправки в WhatsApp или черновик письма на рабочую почту.</p></div>
-<div class="contact-grid"><div class="contact-card"><h3>Что указать в запросе</h3><div class="contact-line"><small>Для подбора</small>Марка материала, диаметр, стандарт или чертёж</div><div class="contact-line"><small>Для расчёта</small>Количество, единица измерения и желаемый срок</div><div class="contact-line"><small>Для ответа</small>Компания, имя и контакт для связи</div><div class="contact-line"><small>Адрес филиала</small>г. Павлодар, ул. Ермухана Бекмаханова, 157/7, офис Б</div></div>
-<form class="contact-card" id="lead-form"><div class="form-grid">
-<div class="field"><label for="name">Ваше имя *</label><input id="name" name="name" required placeholder="Например, Александр"></div>
-<div class="field"><label for="company">Компания</label><input id="company" name="company" placeholder="Название предприятия"></div>
-<div class="field"><label for="phone">Телефон для связи *</label><input id="phone" name="phone" required placeholder="+7 ___ ___ __ __"></div>
-<div class="field"><label for="topic">Что интересует?</label><select id="topic" name="topic"><option>Сварочные материалы</option><option>Сварочное оборудование</option><option>Абразивы Klingspor</option><option>Инструмент Metabo</option><option>Комплексная заявка / спецификация</option></select></div>
-<div class="field full"><label for="details">Марка, количество, комментарий</label><textarea id="details" name="details" placeholder="Например: проволока SV08G2S, Ø 1,2 мм, 500 кг"></textarea></div>
-<div class="field full" style="display:flex;gap:10px;flex-wrap:wrap">
-<button class="btn" type="submit" name="sendto" value="whatsapp">Отправить в WhatsApp ↗</button>
-<button class="btn secondary" type="submit" name="sendto" value="email">Подготовить письмо ↗</button>
-</div>
-</div><p class="form-note" id="form-note">WhatsApp: +7 707 153-59-58 · Почта: ossipov@biprofit.kz. WhatsApp откроет чат с подготовленной заявкой; кнопка почты откроет черновик письма. Отправку письма выполняет пользователь.</p></form></div>
-</div></section>
-<section class="section" id="contacts"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Контакты</div><h2>Свяжитесь с филиалом</h2></div><p>Для точного расчёта пришлите спецификацию или список требуемых позиций.</p></div>
-<div class="contact-card"><div class="contact-grid"><div><h3>B.I.Profit | Павлодар</h3><p style="color:var(--muted)">Сварочные материалы · Оборудование · Абразивы</p></div><div><div class="contact-line"><small>Адрес</small>г. Павлодар, ул. Ермухана Бекмаханова, 157/7, офис Б</div><div class="contact-line"><small>Телефон / WhatsApp</small><a style="color:var(--yellow)" href="https://wa.me/77071535958">+7 707 153-59-58 · WhatsApp</a><br><a href="mailto:ossipov@biprofit.kz">ossipov@biprofit.kz</a></div><div class="contact-line"><small>Бренды</small>ESAB · Klingspor · Metabo</div></div></div></div></div></section>
-</main>
-<footer class="footer"><div class="wrap"><span>© B.I.Profit | Павлодар · Демо-версия сайта</span><span>Наличие, цены и сроки подтверждаются менеджером</span></div></footer>
-<script>
-const filters=[...document.querySelectorAll('.filter')];
-const cards=[...document.querySelectorAll('.product')];
-function applyFilter(value){filters.forEach(b=>b.classList.toggle('active',b.dataset.filter===value));cards.forEach(c=>c.hidden=!(value==='all'||c.dataset.category===value));}
-filters.forEach(b=>b.addEventListener('click',()=>applyFilter(b.dataset.filter)));
-document.querySelectorAll('[data-filter-link]').forEach(a=>a.addEventListener('click',()=>applyFilter(a.dataset.filterLink)));
-document.querySelectorAll('.request-product').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#topic').value= b.dataset.product.includes('Klingspor')?'Абразивы Klingspor':b.dataset.product.includes('Metabo')?'Инструмент Metabo':b.dataset.product.includes('оборудование')||b.dataset.product.includes('плазменной')?'Сварочное оборудование':'Сварочные материалы';document.querySelector('#details').value='Интересует: '+b.dataset.product+'. Прошу сообщить цену, наличие и сроки поставки.';document.querySelector('#request').scrollIntoView({behavior:'smooth'});}));
-document.querySelector('#lead-form').addEventListener('submit',e=>{
-  e.preventDefault();
-  const f=new FormData(e.target);
-  const submitter=e.submitter;
-  const sendto=submitter ? submitter.value : 'whatsapp';
-  const name=f.get('name')||'не указано';
-  const company=f.get('company')||'не указана';
-  const phone=f.get('phone')||'не указан';
-  const topic=f.get('topic')||'не указана';
-  const details=f.get('details')||'не указан';
-  const message=`Здравствуйте! Запрос с сайта B.I.Profit | Павлодар.%0AИмя: ${encodeURIComponent(name)}%0AКомпания: ${encodeURIComponent(company)}%0AТелефон: ${encodeURIComponent(phone)}%0AТема: ${encodeURIComponent(topic)}%0AКомментарий: ${encodeURIComponent(details)}`;
-  if(sendto==='email'){
-    const subject=encodeURIComponent('B2B-заявка с сайта B.I.Profit | Павлодар');
-    const body=decodeURIComponent(message.replace(/%0A/g,'%0D%0A'));
-    window.location.href=`mailto:ossipov@biprofit.kz?subject=${subject}&body=${encodeURIComponent(body)}`;
-    document.querySelector('#form-note').textContent='Открылся черновик письма. Проверьте его и нажмите «Отправить» в своей почтовой программе.';
-  } else {
-    window.open(`https://wa.me/77071535958?text=${message}`,'_blank','noopener');
-    document.querySelector('#form-note').textContent='Открылся WhatsApp с подготовленной заявкой. Проверьте текст и нажмите «Отправить» в WhatsApp.';
-  }
-});
-</script>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Промышленные решения для предприятий</span>
+      <span>Павлодар, Казахстан</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="B.I.Profit — главная">
+        <img src="./logo-biprofit.jpeg" alt="Логотип B.I.Profit">
+        <span>
+          <span class="brand-name">B.I.Profit</span><br>
+          <span class="brand-caption">КАЧЕСТВО ОПРЕДЕЛЯЕТ НАДЁЖНОСТЬ</span>
+        </span>
+      </a>
+
+      <nav aria-label="Главная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#brands">Бренды</a>
+        <a href="#about">О компании</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="button" href="#contacts">Связаться с нами</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">B.I.Profit · Павлодар</span>
+        <h1>Надёжные решения для сварки и промышленности</h1>
+        <p>
+          Сварочные материалы, оборудование и абразивный инструмент
+          для производственных предприятий, строительных организаций
+          и профессиональных сварщиков.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#brands">Наши бренды</a>
+          <a class="button button-outline" href="#contacts">Обсудить поставку</a>
+        </div>
+        <div class="hero-note">
+          <strong>Официальный дистрибьютор ESAB в Казахстане</strong>
+          <span> · Продукция для профессионального применения</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <strong>Проверенные бренды</strong>
+          <span>Продукция известных производителей</span>
+        </div>
+        <div class="trust-item">
+          <strong>Подбор под задачу</strong>
+          <span>Помощь с выбором материалов и оборудования</span>
+        </div>
+        <div class="trust-item">
+          <strong>Работа с предприятиями</strong>
+          <span>Запросы цен и коммерческих предложений</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Наш ассортимент</span>
+            <h2>Продукция для работы</h2>
+          </div>
+          <p>
+            Помогаем подобрать материалы и оборудование
+            под производственные задачи и требования заказчика.
+          </p>
+        </div>
+
+        <div class="catalog-grid">
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">01 / СВАРКА</span>
+            <h3>Сварочные материалы</h3>
+            <p>Электроды, сварочная проволока и присадочные материалы для различных задач.</p>
+            <span class="card-link">Запросить информацию →</span>
+          </a>
+
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">02 / ОБОРУДОВАНИЕ</span>
+            <h3>Сварочное оборудование</h3>
+            <p>Оборудование и решения для производственной сварки и резки металла.</p>
+            <span class="card-link">Запросить информацию →</span>
+          </a>
+
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">03 / АБРАЗИВЫ</span>
+            <h3>Абразивный инструмент</h3>
+            <p>Отрезные, зачистные и шлифовальные круги для профессионального применения.</p>
+            <span class="card-link">Запросить информацию →</span>
+          </a>
+
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">04 / ГАЗ</span>
+            <h3>Газовое оборудование</h3>
+            <p>Решения для газоснабжения сварочных постов и производственных процессов.</p>
+            <span class="card-link">Запросить информацию →</span>
+          </a>
+
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">05 / КОМПЛЕКТУЮЩИЕ</span>
+            <h3>Сварочные комплектующие</h3>
+            <p>Горелки, расходные детали и принадлежности для сварочных работ.</p>
+            <span class="card-link">Запросить информацию →</span>
+          </a>
+
+          <a class="catalog-card" href="#contacts">
+            <span class="card-number">06 / ПОДБОР</span>
+            <h3>Подбор продукции под задачу</h3>
+            <p>Помощь в выборе подходящих материалов и альтернатив для предприятия.</p>
+            <span class="card-link">Обсудить задачу →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands" id="brands">
+      <div class="container">
+        <span class="section-kicker">Бренды</span>
+        <h2>Производители, с которыми работаем</h2>
+        <p class="brands-intro">
+          Подбираем продукцию под задачи заказчика, учитывая
+          технологические требования и условия эксплуатации.
+        </p>
+
+        <div class="brands-grid">
+          <div class="brand-card esab">
+            <strong>ESAB</strong>
+            <span>Сварка и резка</span>
+          </div>
+          <div class="brand-card klingspor">
+            <strong>Klingspor</strong>
+            <span>Абразивные материалы</span>
+          </div>
+          <div class="brand-card gce">
+            <strong>GCE</strong>
+            <span>Газовое оборудование</span>
+          </div>
+          <div class="brand-card binzel">
+            <strong>ABICOR BINZEL</strong>
+            <span>Сварочные горелки и комплектующие</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="section-kicker">О компании</span>
+          <h2>B.I.Profit — поставщик для промышленности</h2>
+          <p>
+            Мы предлагаем сварочные материалы, оборудование,
+            абразивы и комплектующие для предприятий и профессионалов.
+            Наша задача — помочь заказчику подобрать подходящую продукцию
+            и получить информацию по условиям поставки.
+          </p>
+          <p>
+            Филиал в Павлодаре работает с предприятиями региона.
+            Можно обратиться за консультацией, уточнить ассортимент
+            или запросить коммерческое предложение.
+          </p>
+        </div>
+
+        <div class="about-points">
+          <div class="about-point">
+            <strong>Подбор под реальные задачи</strong>
+            <span>Учитываем процесс сварки, материалы и условия эксплуатации.</span>
+          </div>
+          <div class="about-point">
+            <strong>Известные производители</strong>
+            <span>Предлагаем продукцию представленных в ассортименте брендов.</span>
+          </div>
+          <div class="about-point">
+            <strong>Работа с B2B-клиентами</strong>
+            <span>Обсуждение потребности, наличия, сроков и коммерческих условий.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-kicker">Связаться с нами</span>
+          <h2>Обсудим вашу задачу</h2>
+          <p>
+            Напишите нам, какая продукция нужна вашему предприятию.
+            Уточним запрос и поможем с дальнейшим подбором.
+          </p>
+
+          <div class="contact-info">
+            <div>
+              <strong>Адрес</strong>
+              г. Павлодар, ул. Ермухана Бекмаханова, 157/7, офис Б
+            </div>
+            <div>
+              <strong>Телефон / WhatsApp</strong>
+              +7 707 153-59-58
+            </div>
+            <div>
+              <strong>Электронная почта</strong>
+              ossipov@biprofit.kz
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <h3>Запрос для отдела продаж</h3>
+          <p>
+            Чтобы получить консультацию или запросить коммерческое
+            предложение, свяжитесь с нами удобным способом.
+          </p>
+          <a class="button"
+             href="https://wa.me/77071535958?text=Здравствуйте!%20Хочу%20уточнить%20информацию%20о%20продукции%20B.I.Profit."
+             target="_blank" rel="noopener noreferrer">
+            Написать в WhatsApp
+          </a>
+          <a class="button button-outline"
+             href="mailto:ossipov@biprofit.kz?subject=Запрос%20по%20продукции%20B.I.Profit">
+            Написать на почту
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> B.I.Profit · Павлодар</span>
+      <span>Сварочные материалы и оборудование для промышленности</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
