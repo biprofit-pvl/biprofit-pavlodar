@@ -154,7 +154,11 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
  .benefit-grid{grid-template-columns:1fr 1fr}
  .benefit{padding:16px 12px}
  .benefit:first-child{padding-left:12px}
- .cat-grid{grid-template-columns:1fr}
+ .cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
  ..cat-img {
   width: 100%;
   height: 260px;
