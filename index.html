@@ -353,4 +353,108 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
 <a class="wa-float" aria-label="Написать в WhatsApp" href="https://wa.me/77071535958" target="_blank" rel="noopener">◉</a>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
+  
+<section id="email-request" class="welding-request">
+  <h2>Заявка на сварочные материалы</h2>
+  <p>Заполните данные предприятия, и мы подготовим предложение.</p>
+
+  <form id="emailRequestForm">
+    <label>Название организации *</label>
+    <input name="company" required placeholder="Название предприятия">
+
+    <label>Контактное лицо *</label>
+    <input name="person" required placeholder="ФИО">
+
+    <label>Телефон или e-mail *</label>
+    <input name="contact" required placeholder="+7...">
+
+    <label>Вид материала *</label>
+    <select name="material" required>
+      <option value="">Выберите материал</option>
+      <option>Сварочные электроды</option>
+      <option>Сварочная проволока MIG/MAG</option>
+      <option>TIG-прутки</option>
+      <option>Сварочные флюсы</option>
+      <option>Несколько видов материалов</option>
+    </select>
+
+    <label>Марка материала</label>
+    <input name="grade" placeholder="Например, OK 48.00">
+
+    <label>Диаметр, мм</label>
+    <input name="diameter" placeholder="Например, 3.2">
+
+    <label>Количество, кг</label>
+    <input name="quantity" type="number" min="0" step="any" placeholder="Например, 500">
+
+    <label>Дополнительные требования</label>
+    <textarea name="comment" rows="3" placeholder="Стандарт, упаковка, сроки поставки"></textarea>
+
+    <button type="submit">Подготовить письмо →</button>
+  </form>
+</section>
+
+<style>
+.welding-request {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 25px;
+  color: #f5f5f5;
+  background: #151719;
+  border: 1px solid #383a3c;
+  border-radius: 14px;
+}
+.welding-request h2 { margin-top: 0; }
+.welding-request p { color: #bbb; line-height: 1.5; }
+.welding-request form { display: grid; gap: 10px; }
+.welding-request label { font-size: 14px; margin-top: 5px; }
+.welding-request input,
+.welding-request select,
+.welding-request textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  color: #fff;
+  background: #222426;
+  border: 1px solid #484a4c;
+  border-radius: 7px;
+  font: inherit;
+}
+.welding-request button {
+  margin-top: 10px;
+  padding: 14px;
+  border: 0;
+  border-radius: 7px;
+  background: #f5c400;
+  color: #171717;
+  font-weight: 700;
+  cursor: pointer;
+}
+</style>
+
+<script>
+document.getElementById('emailRequestForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const d = new FormData(this);
+  const get = name => (d.get(name) || '').toString().trim();
+
+  const body = [
+    'Заявка на сварочные материалы — B.I.Profit',
+    '',
+    'Организация: ' + get('company'),
+    'Контактное лицо: ' + get('person'),
+    'Контакт: ' + get('contact'),
+    'Материал: ' + get('material'),
+    'Марка: ' + (get('grade') || 'Не указана'),
+    'Диаметр, мм: ' + (get('diameter') || 'Не указан'),
+    'Количество, кг: ' + (get('quantity') || 'Не указано'),
+    'Дополнительные требования: ' + (get('comment') || 'Нет')
+  ].join('\n');
+
+  window.location.href = 'mailto:ossipov@biprofit.kz?subject=' +
+    encodeURIComponent('Заявка на сварочные материалы — ' + get('company')) +
+    '&body=' + encodeURIComponent(body);
+});
+</script>
+
 </html>
