@@ -235,6 +235,27 @@ body {
     transition: none !important;
   }
 }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    width: 145px;
+  }
+}
 <style>
 :root{--bg:#101112;--panel:#191b1d;--panel2:#202326;--text:#f7f7f5;--muted:#b6b8ba;--yellow:#ffd21f;--line:#34373a;--white:#fff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:10px 0;flex-wrap:wrap}.header{position:sticky;top:0;z-index:10;background:rgba(16,17,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.4px}.logo{width:42px;height:42px;display:grid;place-items:center;background:var(--yellow);color:#101112;font-weight:1000;font-size:15px;clip-path:polygon(0 0,100% 0,100% 78%,78% 100%,0 100%)}.brand small{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:1.6px}.links{display:flex;gap:22px;color:#ddd;font-size:14px}.links a:hover{color:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--yellow);background:var(--yellow);color:#111;padding:12px 18px;border-radius:7px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}.btn.secondary{background:transparent;color:var(--text);border-color:#555}.btn.small{padding:9px 12px;font-size:13px}.hero{position:relative;overflow:hidden;padding:78px 0 66px;background:radial-gradient(ellipse at 83% 34%,rgba(255,210,31,.14),transparent 35%),linear-gradient(120deg,#101112 45%,#181a1c)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:44px}.eyebrow{color:var(--yellow);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.03;letter-spacing:-2px;margin:16px 0 20px;max-width:680px}.hero h1 span{color:var(--yellow)}.hero p{color:#c4c5c6;max-width:580px;font-size:18px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:13px}.trust span:before{content:"✓";color:var(--yellow);font-weight:900;margin-right:7px}.hero-art{min-height:350px;position:relative;display:flex;align-items:center;justify-content:center}.halo{width:min(380px,100%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,210,31,.4);display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(255,210,31,.12),rgba(255,210,31,.02) 55%,transparent 56%)}.halo:before,.halo:after{content:"";position:absolute;border:1px solid rgba(255,210,31,.18);border-radius:50%;inset:25px}.halo:after{inset:55px}.machine{width:190px;height:200px;position:relative;z-index:1;background:linear-gradient(145deg,#35393d,#151719);border:2px solid #55595d;border-radius:16px;box-shadow:0 30px 60px #0009;transform:rotate(-5deg);padding:17px}.machine:before{content:"ESAB";display:block;color:var(--yellow);font-weight:1000;font-size:26px;letter-spacing:2px}.machine .screen{height:48px;background:#090a0a;border:1px solid #555;margin:12px 0;border-radius:4px;position:relative}.machine .screen:after{content:"350";position:absolute;right:10px;top:8px;color:#9df6a7;font-family:monospace;font-size:22px}.machine .knobs{display:flex;gap:12px}.machine .knobs i{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#777,#222);border:2px solid #777}.spark{position:absolute;color:var(--yellow);font-size:28px}.spark.s1{top:12%;right:14%}.spark.s2{bottom:18%;left:12%;font-size:20px}.floating{position:absolute;bottom:20px;right:-4px;background:#202326;border:1px solid #484b4e;border-radius:9px;padding:13px 16px;font-size:13px;box-shadow:0 12px 30px #0006}.floating strong{display:block;color:var(--yellow);font-size:16px}.section{padding:70px 0}.section.alt{background:#151719;border-top:1px solid #242629;border-bottom:1px solid #242629}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section h2{font-size:clamp(28px,3vw,40px);letter-spacing:-1px;margin:8px 0}.section-head p{color:var(--muted);max-width:520px;margin:0}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.category{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;min-height:210px;display:flex;flex-direction:column;transition:.2s}.category:hover{border-color:#82701e;transform:translateY(-3px)}.cat-icon{width:48px;height:48px;background:#2c2a1e;color:var(--yellow);border-radius:10px;display:grid;place-items:center;font-size:24px;margin-bottom:18px}.category h3{font-size:18px;margin:0 0 8px}.category p{color:var(--muted);font-size:14px;margin:0 0 18px}.category a{margin-top:auto;color:var(--yellow);font-weight:800;font-size:13px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{border:1px solid #444;background:transparent;color:#ddd;padding:9px 14px;border-radius:99px;cursor:pointer;font-size:13px}.filter.active,.filter:hover{background:var(--yellow);border-color:var(--yellow);color:#111;font-weight:800}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;min-height:240px}.product .tag{color:var(--yellow);font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:900}.product h3{font-size:20px;margin:10px 0 8px}.product p{color:var(--muted);font-size:14px;margin:0 0 18px}.product .bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.price-note{font-size:12px;color:var(--muted)}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{padding:24px;border-left:2px solid var(--yellow);background:#1a1c1e}.benefit h3{margin:0 0 8px}.benefit p{color:var(--muted);font-size:14px;margin:0}.cta{padding:38px;border-radius:16px;background:linear-gradient(120deg,#272719,#1c1e20);border:1px solid #4a4425;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.cta h2{margin:0 0 8px}.cta p{color:var(--muted);margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;color:#d6d6d6}.field input,.field select,.field textarea{width:100%;background:#111314;color:white;border:1px solid #414447;border-radius:7px;padding:12px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--yellow)}.field textarea{min-height:100px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin-top:12px}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}.contact-card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:12px}.contact-line{padding:14px 0;border-bottom:1px solid var(--line)}.contact-line:last-child{border:0}.contact-line small{display:block;color:var(--muted);margin-bottom:4px}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.mobile-menu{display:none}
@@ -245,7 +266,17 @@ body {
 <body>
 <div class="topbar"><div class="wrap"><span>Павлодар · Работаем с предприятиями и снабжением</span><span>Пн–Пт · Уточняйте наличие у менеджера</span></div></div>
 <header class="header"><div class="wrap nav">
-<a class="brand" href="#top"><span class="logo">BI</span><span>B.I.PROFIT<small>ПАВЛОДАР</small></span></a>
+
+<a class="brand" href="./" aria-label="B.I.Profit — главная страница">
+  <img
+    src="./logo-biprofit.png"
+    alt="B.I.Profit — официальный дистрибьютор ESAB в Казахстане"
+    class="brand-logo"
+    width="190"
+    height="60"
+  />
+</a>
+ href="#top"><span class="logo">BI</span><span>B.I.PROFIT<small>ПАВЛОДАР</small></span></a>
 <nav class="links"><a href="#catalog">Каталог</a><a href="#advantages">Преимущества</a><a href="#about">О компании</a><a href="#contacts">Контакты</a><a href="elektrody-esab-pavlodar.html">Электроды ESAB</a></nav>
 <a class="btn small" href="#request">Запросить цену ↗</a>
 </div></header>
