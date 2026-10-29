@@ -256,7 +256,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
 
 <div class="cat-actions">
   <button type="button" class="cat-link choose-contact" data-product="Сварочные материалы">
-    Подобрать материалы →
+    Подобрать материалы
   </button>
 </div>
 
@@ -595,12 +595,12 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
 
 .cat-actions .choose-contact::before {
   content: "⚒";
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .cat-actions .choose-contact::after {
-  content: "→";
-  font-size: 20px;
+  content: none !important;
+  display: none !important;
 }
 
 .cat-actions .choose-contact:hover {
