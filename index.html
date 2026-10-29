@@ -341,11 +341,18 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
   }
 }
 
+
 .hero .hero-services {
-  grid-template-columns: repeat(2, minmax(0, 240px));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 280px));
   justify-content: start;
-  gap: 14px 28px;
+  align-items: start;
+  column-gap: 36px;
+  row-gap: 18px;
+  max-width: 600px;
+  margin: 0 0 28px;
 }
+
 
 .hero .hero-services > div {
   min-width: 0;
