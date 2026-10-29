@@ -613,6 +613,29 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
   outline-offset: 3px;
 }
 
+.cat-actions button.choose-contact {
+  background: transparent !important;
+  color: #f5c400 !important;
+  border: 1px solid #b99a20 !important;
+  border-radius: 7px !important;
+  box-shadow: none !important;
+}
+
+.cat-actions button.choose-contact:hover {
+  background: rgba(245, 196, 0, .08) !important;
+  border-color: #f5c400 !important;
+}
+
+.cat-actions button.choose-contact::before {
+  content: "⚒";
+  color: #f5c400;
+}
+
+.cat-actions button.choose-contact::after {
+  content: "→";
+  color: #f5c400;
+}
+
 @media (max-width: 480px) {
   .cat-actions .choose-contact {
     min-height: 46px;
