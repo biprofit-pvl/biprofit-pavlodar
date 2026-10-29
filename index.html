@@ -370,30 +370,52 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
 <main>
 <section class="hero">
   <div class="wrap hero-in">
-    <div class="kicker">СВАРКА · РЕЗКА · НАДЁЖНОСТЬ</div>
+    <div class="kicker">КАЧЕСТВО · ОПРЕДЕЛЯЕТ · НАДЁЖНОСТЬ</div>
 
-    <h1>Всё для сварки и резки —<br>
-      <em>в одном месте</em>
-    </h1>
+    
+<h1 class="hero-title">
+  Всё для сварки<br>
+  <em>в одном месте</em>
+</h1>
 
-    <p>
-      Сварочные материалы, оборудование и абразивы для предприятий,
-      мастерских и частных клиентов. Помогаем с подбором продукции,
-      выезжаем на объекты, консультируем и сопровождаем на всех этапах сотрудничества.
-    </p>
+<div class="hero-brand">B.I.Profit</div>
 
-    <div class="actions">
-      <a class="btn"
-         href="mailto:ossipov@biprofit.kz?subject=Запрос%20коммерческого%20предложения">
-        Запросить предложение →
-      </a>
+<div class="hero-categories">
+  <span>Сварочные материалы</span>
+  <span>Сварочное оборудование</span>
+  <span>Абразивные материалы</span>
+</div>
 
-      <a class="btn outline"
-         href="https://wa.me/77071535958?text=Здравствуйте!%20Хочу%20подобрать%20сварочные%20материалы%20или%20оборудование.">
-        Написать в WhatsApp
-      </a>
-    </div>
-  </div>
+<div class="hero-audience">
+  <span class="hero-icon">♙</span>
+  Для предприятий, мастерских и частных клиентов
+</div>
+
+<div class="hero-services">
+  <div><span class="hero-icon">✦</span> Подбор продукции</div>
+  <div><span class="hero-icon">⌖</span> Выезд на объекты</div>
+  <div><span class="hero-icon">ⓘ</span> Консультации</div>
+  <div><span class="hero-icon">✓</span> Сопровождение</div>
+</div>
+
+<p>
+  Сварочные материалы, оборудование и абразивы для предприятий,
+  мастерских и частных клиентов. Помогаем подобрать продукцию,
+  выезжаем на объекты, консультируем и сопровождаем на всех этапах сотрудничества.
+</p>
+
+<div class="actions">
+  <a class="btn"
+     href="mailto:ossipov@biprofit.kz?subject=Запрос%20коммерческого%20предложения">
+    Запросить предложение →
+  </a>
+
+  <a class="btn outline"
+     href="https://wa.me/77071535958?text=Здравствуйте!%20Хочу%20подобрать%20сварочные%20материалы%20или%20оборудование.">
+    Написать в WhatsApp
+  </a>
+</div>
+</div>
 </section>
 </main>
 
@@ -661,6 +683,105 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
   max-width: 650px;
   line-height: 1.65;
   font-size: 17px;
+}
+
+/* Первый экран B.I.Profit */
+.hero .hero-title {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 850;
+  line-height: 1.04;
+  letter-spacing: -2px;
+}
+
+.hero .hero-title em {
+  color: #ffc928;
+  font-style: normal;
+}
+
+.hero .hero-brand {
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: clamp(42px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.hero .hero-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero .hero-audience {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.hero .hero-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ffc928;
+  border-radius: 8px;
+  color: #ffc928;
+  font-size: 21px;
+}
+
+.hero .hero-services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin: 0 0 24px;
+}
+
+.hero .hero-services > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero .hero-in > p {
+  max-width: 760px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .hero .hero-title {
+    font-size: clamp(38px, 10vw, 52px);
+    letter-spacing: -1px;
+  }
+
+  .hero .hero-brand {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .hero .hero-categories {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero .hero-services {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
