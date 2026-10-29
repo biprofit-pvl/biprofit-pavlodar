@@ -177,6 +177,169 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
  .map iframe{height:260px}
  .wa-float{right:13px;bottom:13px;width:48px;height:48px}
 }
+
+/* B.I.Profit — hero */
+.hero .hero-title {
+  max-width: 850px;
+  margin: 20px 0 8px;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.hero .hero-title em {
+  color: #f5c518;
+  font-style: normal;
+}
+
+.hero .hero-brand {
+  margin: 0 0 22px;
+  color: #fff;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 18px 0 22px;
+}
+
+.hero-category {
+  padding: 7px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-right: 1px solid rgba(245,197,24,.5);
+}
+
+.hero-category:first-child {
+  padding-left: 0;
+}
+
+.hero-category:last-child {
+  border-right: 0;
+}
+
+.hero-audience {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 22px 0;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.hero-audience svg {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: #f5c518;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 24px;
+  max-width: 780px;
+  margin: 24px 0;
+}
+
+.hero-service {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.hero-service svg {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: #f5c518;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-service strong,
+.hero-service span {
+  display: block;
+}
+
+.hero-service strong {
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.hero-service span {
+  color: #d0d0d0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.hero .hero-description {
+  max-width: 650px;
+  margin: 20px 0;
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .hero .hero-title {
+    font-size: clamp(36px, 9vw, 52px);
+    letter-spacing: -1px;
+  }
+
+  .hero .hero-brand {
+    font-size: 36px;
+  }
+
+  .hero-categories {
+    gap: 8px 0;
+  }
+
+  .hero-category {
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+
+  .hero-services {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero-service svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .actions .btn {
+    text-align: center;
+  }
+}
 </style>
 </head>
 <body>
