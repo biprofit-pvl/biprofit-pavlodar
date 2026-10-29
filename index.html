@@ -342,31 +342,58 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
 }
 
 
+
+/* Услуги на первом экране */
 .hero .hero-services {
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 280px));
+  grid-template-columns: repeat(2, minmax(0, 260px));
   justify-content: start;
   align-items: start;
-  column-gap: 36px;
+  column-gap: 28px;
   row-gap: 18px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 576px;
   margin: 0 0 28px;
 }
 
-
 .hero .hero-services > div {
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 
+/* Отступ первого экрана */
 .hero .hero-in {
   padding-top: 36px;
 }
 
+/* Телефоны */
 @media (max-width: 600px) {
+  .hero .hero-in {
+    padding-top: 24px;
+  }
+
   .hero .hero-services {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 14px;
+    row-gap: 16px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .hero .hero-services > div {
+    font-size: 14px;
+    line-height: 1.45;
   }
 }
+
+/* Очень узкие телефоны */
+@media (max-width: 380px) {
+  .hero .hero-services {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+}
+
 </style>
 </head>
 <body>
