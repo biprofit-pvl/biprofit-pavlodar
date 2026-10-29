@@ -340,6 +340,26 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
     text-align: center;
   }
 }
+
+.hero .hero-services {
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  justify-content: start;
+  gap: 14px 28px;
+}
+
+.hero .hero-services > div {
+  min-width: 0;
+}
+
+.hero .hero-in {
+  padding-top: 36px;
+}
+
+@media (max-width: 600px) {
+  .hero .hero-services {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body>
