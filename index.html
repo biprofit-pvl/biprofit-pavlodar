@@ -569,6 +569,58 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:#b5bcbb;font-size:1
   height: 20px;
   flex: 0 0 20px;
 }
+
+/* Единый стиль кнопок B.I.Profit */
+.cat-actions .choose-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  background: transparent;
+  color: #f5c400;
+  border: 1px solid #b99a20;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.cat-actions .choose-contact::before {
+  content: "⚒";
+  font-size: 18px;
+}
+
+.cat-actions .choose-contact::after {
+  content: "→";
+  font-size: 20px;
+}
+
+.cat-actions .choose-contact:hover {
+  background: rgba(245, 196, 0, .08);
+  border-color: #f5c400;
+}
+
+.cat-actions .choose-contact:focus-visible {
+  outline: 2px solid #f5c400;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .cat-actions .choose-contact {
+    min-height: 46px;
+    padding: 11px 10px;
+    font-size: 12px;
+    gap: 7px;
+  }
+}
 </style>
 
 <script>
